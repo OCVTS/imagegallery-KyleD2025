@@ -52,11 +52,34 @@ footer{
     display:flex;
     justify-content: center;
     align-items:center;
-    visibility: hidden;
-    opacity:0;
+    flex-direction: row;
     transition: opacity 0.3s ease;
 }
-#lightbox-visible{
+.hidden{
+    visibility: hidden;
+    opacity:0;
+}
+.visible{
     visibility:visible;
     opacity: 1;
 }
+.lightbox-content button{
+    background-color: rgba(0,0,0,6);
+    color:white;
+    border:none;
+    font-size:1.5rem;
+    cursor: pointer;
+    padding:0.5rem;
+    margin:0 1rem;
+    border-radius:50%;
+}
+.lightbox-content{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.lightbox-content button:active{
+    background-color: rgb(48, 48, 48);
+
+}
+
